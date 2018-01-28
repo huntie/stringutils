@@ -8,7 +8,7 @@
     :license: MIT, see LICENSE.txt for more details.
 """
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 
 import re
 
