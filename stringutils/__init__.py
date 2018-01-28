@@ -8,6 +8,8 @@
     :license: MIT, see LICENSE.txt for more details.
 """
 
+__version__ = '0.1.0'
+
 import re
 
 def join(strings, sep=', ', insertend=False):

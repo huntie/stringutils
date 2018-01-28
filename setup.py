@@ -1,9 +1,10 @@
 from setuptools import setup
+from stringutils import __version__
 
 setup(
     name='stringutils',
     description='A functional string utility library for Python',
-    version='0.1.0',
+    version=__version__,
     url='https://github.com/huntie/stringutils',
     author='Alex Hunt',
     author_email='hello@alexhunt.io',
