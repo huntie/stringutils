@@ -16,7 +16,7 @@ def join(strings, sep=', ', insertend=False):
     delimiter. If *insertend* is given and true, the delimiter is also included
     at the end of the string.
     """
-    return sep.join(strings)
+    return sep.join(strings) + (sep if insertend else '')
 
 def lines(string, keepends=False):
     """
