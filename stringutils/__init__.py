@@ -26,6 +26,12 @@ def lines(string, keepends=False):
     """
     return string.splitlines(keepends)
 
+def reverse(string):
+    """
+    Reverse the order of the characters in a string.
+    """
+    return string[::-1]
+
 def words(string):
     """
     Split a string into a list of words, which were delimited by one or more
