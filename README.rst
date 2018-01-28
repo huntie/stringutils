@@ -3,7 +3,7 @@ stringutils
 
 A functional string utility library for Python. Closely inspired by implementations in Haskell and PHP.
 
-For more documentation, please see http://stringutils.readthedocs.io.
+For more documentation, please see `http://stringutils.readthedocs.io <http://stringutils.readthedocs.io/en/develop/>`_.
 
 .. note::
     This package is still in an early development stage, and it is possible that the naming and API of some functions will change.
@@ -14,7 +14,7 @@ Features
 This library provides:
 
 - A set of helpful additional string transformation and case conversion functions.
-- Extended versions of existing `str` methods as functions where useful.
+- Extended versions of existing *str* methods as functions where useful.
 
 Installation
 ------------
