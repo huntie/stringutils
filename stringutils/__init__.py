@@ -18,6 +18,19 @@ def concat(strings):
     """
     return ''.join(strings)
 
+def camel_case(string):
+    """
+    Convert a string identifier to :code:`camelCase`.
+    """
+    return lcfirst(pascal_case(string))
+
+def dashed_case(string):
+    """
+    Convert a string identifier to :code:`dashed-case`. If the string is in
+    :code:`snake_case`, capitalization of words will be preserved.
+    """
+    return join(split_identifier(string), '-')
+
 def join(strings, sep=', ', insertend=False):
     """
     Concatenate a list of strings into a single string by a separating
@@ -40,11 +53,40 @@ def lcfirst(string):
     """
     return string[:1].lower() + string[1:]
 
+def pascal_case(string):
+    """
+    Convert a string identifier to :code:`PascalCase`.
+    """
+    return concat(map(ucfirst, split_identifier(string)))
+
 def reverse(string):
     """
     Reverse the order of the characters in a string.
     """
     return string[::-1]
+
+def snake_case(string):
+    """
+    Convert a string identifier to :code:`snake_case`. If the string is in
+    :code:`dashed-case`, capitalization of words will be preserved.
+    """
+    return join(split_identifier(string), '_')
+
+def split_identifier(string):
+    """
+    Split a string identifier into a list of its subparts.
+    """
+    return (
+        re.split('[ \-_]', string)
+            if re.findall('[ \-_]', string)
+            else words(re.sub(r'([a-z])([A-Z0-9])', r'\1 \2', string))
+    )
+
+def title_case(string):
+    """
+    Convert a string identifier to :code:`Title Case`.
+    """
+    return join(map(ucfirst, split_identifier(string)), ' ')
 
 def words(string):
     """
