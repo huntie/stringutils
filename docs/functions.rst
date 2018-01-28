@@ -1,6 +1,12 @@
 Function reference
 ==================
 
+Case conversion
+---------------
+
+.. autofunction:: stringutils.lcfirst
+.. autofunction:: stringutils.ucfirst
+
 Transformations
 ---------------
 

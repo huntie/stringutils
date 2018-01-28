@@ -28,6 +28,12 @@ def lines(string, keepends=False):
     """
     return string.splitlines(keepends)
 
+def lcfirst(string):
+    """
+    Convert the first character of a string to lowercase.
+    """
+    return string[:1].lower() + string[1:]
+
 def reverse(string):
     """
     Reverse the order of the characters in a string.
@@ -40,6 +46,12 @@ def words(string):
     whitespace characters.
     """
     return re.split('\s+', string)
+
+def ucfirst(string):
+    """
+    Convert the first character of a string to uppercase.
+    """
+    return string[:1].upper() + string[1:]
 
 def unlines(lines):
     """
