@@ -12,6 +12,12 @@ __version__ = '0.1.0'
 
 import re
 
+def concat(strings):
+    """
+    Concatenate a list of strings into a single string.
+    """
+    return ''.join(strings)
+
 def join(strings, sep=', ', insertend=False):
     """
     Concatenate a list of strings into a single string by a separating

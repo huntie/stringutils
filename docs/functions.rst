@@ -15,6 +15,7 @@ Transformations
 Lists
 -----
 
+.. autofunction:: stringutils.concat
 .. autofunction:: stringutils.join
 .. autofunction:: stringutils.lines
 .. autofunction:: stringutils.words
