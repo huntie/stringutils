@@ -23,7 +23,6 @@ Lists
 .. autofunction:: stringutils.split_identifier
 .. autofunction:: stringutils.words
 .. autofunction:: stringutils.unlines
-.. autofunction:: stringutils.unlines_universal
 .. autofunction:: stringutils.unwords
 
 Transformations

@@ -12,17 +12,17 @@ __version__ = '0.2.0'
 
 import re
 
-def concat(strings):
-    """
-    Concatenate a list of strings into a single string.
-    """
-    return ''.join(strings)
-
 def camel_case(string):
     """
     Convert a string identifier to :code:`camelCase`.
     """
     return lcfirst(pascal_case(string))
+
+def concat(strings):
+    """
+    Concatenate a list of strings into a single string.
+    """
+    return ''.join(strings)
 
 def dashed_case(string):
     """
@@ -101,19 +101,12 @@ def ucfirst(string):
     """
     return string[:1].upper() + string[1:]
 
-def unlines(lines):
+def unlines(lines, newline='\n'):
     """
     Join a list of lines into a single string after appending a terminating
     newline character to each.
     """
-    return join(lines, '\n', True)
-
-def unlines_universal(lines):
-    """
-    Join a list of lines into a single string after appending a terminating
-    CRLF newline sequence to each.
-    """
-    return join(lines, '\r\n', True)
+    return join(lines, newline, True)
 
 def unwords(words):
     """
