@@ -6,6 +6,7 @@ Assertions
 
 .. autofunction:: stringutils.contains
 .. autofunction:: stringutils.contains_all
+.. autofunction:: stringutils.is_whitespace
 
 Case conversion
 ---------------

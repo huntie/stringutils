@@ -44,6 +44,12 @@ def dashed_case(string):
     """
     return join(split_identifier(string), '-')
 
+def is_whitespace(string):
+    """
+    Determine if a string contains only whitespace characters or is empty.
+    """
+    return string.strip() == ''
+
 def join(strings, sep=', ', insertend=False):
     """
     Concatenate a list of strings into a single string by a separating
