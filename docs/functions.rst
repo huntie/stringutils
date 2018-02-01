@@ -1,6 +1,12 @@
 Function reference
 ==================
 
+Assertions
+----------
+
+.. autofunction:: stringutils.contains
+.. autofunction:: stringutils.contains_all
+
 Case conversion
 ---------------
 

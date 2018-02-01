@@ -24,6 +24,19 @@ def concat(strings):
     """
     return ''.join(strings)
 
+def contains(string, matches):
+    """
+    Determine if a string contains any of the given values. *matches* may be a
+    single string, or a list of strings.
+    """
+    return any([m in string for m in ([matches] if isinstance(matches, str) else matches)])
+
+def contains_all(string, matches):
+    """
+    Determine if a string contains all of the given values.
+    """
+    return all([m in string for m in matches])
+
 def dashed_case(string):
     """
     Convert a string identifier to :code:`dashed-case`. If the string is in
