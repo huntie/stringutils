@@ -16,7 +16,7 @@ exclude_patterns = ['_build']
 
 master_doc = 'index'
 project = 'stringutils'
-copyright = '{}, Alex Hunt'.format(datetime.now().year)
+copyright = '{} Alex Hunt'.format(datetime.now().year)
 author = 'Alex Hunt'
 version = __version__
 release = version
@@ -36,5 +36,6 @@ html_theme_options = {
     'github_user': 'huntie',
     'github_repo': 'stringutils',
     'github_type': 'star',
-    'fixed_sidebar': True
+    'fixed_sidebar': True,
+    'sidebar_collapse': False
 }
