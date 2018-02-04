@@ -1,7 +1,7 @@
 stringutils
 ===========
 
-A functional string utility library for Python. Closely inspired by implementations in Haskell and PHP.
+A functional string utility library for Python 2 and 3. Closely inspired by implementations in Haskell and PHP.
 
 For more documentation, please see `http://stringutils.readthedocs.io <http://stringutils.readthedocs.io/en/develop/>`_.
 
@@ -11,19 +11,31 @@ For more documentation, please see `http://stringutils.readthedocs.io <http://st
 Features
 --------
 
-This library provides:
+The main design goal of this library is to provide helpful string functions which complement what can already be done with *str*, *str.format* and *textwrap*. As such, it includes:
 
-- A set of helpful additional string transformation and case conversion functions.
+- A selective set of additional string helper functions.
 - Extended versions of existing *str* methods as functions where useful.
 
 Installation
 ------------
 
-Install using pip:
+Install the latest release from `PyPI <https://pypi.org/project/stringutils/>`_:
 
 .. code-block:: sh
 
     pip install stringutils
+
+Usage
+-----
+
+All functions are available directly off the :code:`stringutils` package. You may choose to import individual functions by name, or import all.
+
+.. code-block:: python
+
+    from stringutils import reverse, unwords, words
+
+    def reverse_words(string):
+        return unwords(map(reverse, words(string)))
 
 Contribute
 ----------
